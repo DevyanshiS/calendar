@@ -1,0 +1,53 @@
+*, ::before, ::after{ margin: 0; box-sizing: border-box; }
+html{ font-size: 15px; scroll-behavior: smooth; }
+body{ font: 16px/1.4 'Trebuchet MS'; }
+.container{ max-width: 1200px; margin: auto; }
+label{ display: inline-block; }
+a{ text-decoration: none; }
+
+h1{ text-align: center; margin: 2rem; }
+
+button{ cursor: pointer; }
+:disabled{ cursor: not-allowed; }
+.btn:enabled:active{
+    background-color: #aaa;
+}
+
+
+
+.box{ border: 5px solid black; display: block; padding: 20px; }
+
+.currDate{ font-weight: 700; font-size: 1.5rem; }
+
+/* previous and next buttons */
+.info{ display: flex; text-align: right; justify-content: space-between; margin-bottom: 10px; }
+.move{ background: none; border: none; }
+
+
+/* weeks */
+.days{ display: flex; justify-content: space-between; margin-bottom: 10px; }
+.days li{ list-style: none; margin: 8px; font-weight: 900; font-size: 1.5rem; }
+
+.days li{ 
+    list-style: none;
+    margin: 8px; 
+    text-align: center; 
+    width: calc(100% / 7); /* Distribute days evenly */ 
+}
+.dates { 
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+.dates li { 
+    list-style: none; 
+    margin-bottom: 8px;
+    display: inline-block;
+    text-align: center; 
+    width: calc(100% / 7); /* Distribute dates evenly */
+    font-size: 1.2rem;
+}
+.inactive{ color: #b6b1b1; }
+.dates li.active{ background: pink; border: 1px solid pink; border-radius: 50%; padding: 2px; display: inline-block; }
+
+
